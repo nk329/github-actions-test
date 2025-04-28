@@ -1,0 +1,14 @@
+name: Hello Actions
+
+on: 
+  push:
+  pull_request:
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello, Actions!"
+
